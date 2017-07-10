@@ -1,0 +1,11 @@
+﻿				if (!VaildUtil.TryConvert({sourceList}[{index} + startIndex], out {membername},{min},{max}))
+				{
+					m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]读取出现错误，{3}必须为{4} - {5} {6}型", "{configName}", lineIndex,{index}+1, {sourceList}[{index} + startIndex],{min},{max},"{classname}","{desc}");
+					return null;
+				}
+							
+				if (!VaildUtil.CheckRefrenceConfig("{refrenceConfigName}", {refrenceConfigId} , {sourceList}[{index} + startIndex]))
+				{
+						m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "{configName}", lineIndex,{index}+1, {sourceList}[{index} + startIndex],"{refrenceConfigName}","{desc}");
+						return null;
+				}

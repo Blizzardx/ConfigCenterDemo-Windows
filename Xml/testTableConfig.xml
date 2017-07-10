@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <nodeInfoList xsi:type="ConfigElementNodeInfo" id="0" name="id" desc="id" type="I32" rangeMin="0" rangeMax="100" refrenceConfigId="0" />
+  <nodeInfoList xsi:type="ConfigElementNodeInfo" id="1" name="name" desc="name" type="String" rangeMin="" rangeMax="" refrenceConfigId="0" />
+  <nodeInfoList xsi:type="ConfigElementNodeInfo" id="2" name="costId" desc="constId" type="I32" rangeMin="" rangeMax="" refrenceConfigName="" refrenceConfigId="0" />
+  <nodeInfoList xsi:type="ConfigStructInfo" id="3" name="position" desc="position">
+    <nodeInfoList id="3" name="x" desc="x" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+    <nodeInfoList id="4" name="y" desc="y" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+    <nodeInfoList id="5" name="z" desc="z" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigStructInfo" id="6" name="nameMessageId" desc="nameMessageId">
+    <nodeInfoList id="6" name="id" desc="id" type="I32" rangeMin="" rangeMax="" refrenceConfigId="0" />
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigNodeListInfo" types="Letter">
+    <nodeInfo id="7" name="textureName" desc="textureName" type="String" rangeMin="" rangeMax="" refrenceConfigId="0" />
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigStructListInfo" types="Brackets">
+    <structInfo id="8" name="vector4" desc="vector4">
+      <nodeInfoList id="8" name="x" desc="x" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+      <nodeInfoList id="9" name="y" desc="y" type="Double" rangeMin="" rangeMax="" refrenceConfigName="" refrenceConfigId="0" />
+      <nodeInfoList id="10" name="z" desc="z" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+      <nodeInfoList id="11" name="w" desc="w" type="Double" rangeMin="" rangeMax="" refrenceConfigName="" refrenceConfigId="0" />
+    </structInfo>
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigStructListInfo" types="Letter">
+    <structInfo id="12" name="package" desc="package">
+      <nodeInfoList id="12" name="packageName" desc="packageName" type="String" rangeMin="" rangeMax="" refrenceConfigName="" refrenceConfigId="0" />
+    </structInfo>
+  </nodeInfoList>
+</root>

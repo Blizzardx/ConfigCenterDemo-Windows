@@ -1,0 +1,4 @@
+﻿		if (index == {id})
+		{
+			return values[{realIndex} + tmpIndexOffset] == keyValue;
+		}

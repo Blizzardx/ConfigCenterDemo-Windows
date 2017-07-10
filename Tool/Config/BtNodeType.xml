@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BTNodeTypeConfigData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <m_TypeInfoList>
+    <BTNodeTypeInfoData IsRoot="true" Name="BTRoot" IsLimitChildCount="true" LimitChildCount="1" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList />
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTSequence" IsLimitChildCount="false" LimitChildCount="0" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList />
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTSelector" IsLimitChildCount="false" LimitChildCount="0" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList />
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTParallelSelector" IsLimitChildCount="false" LimitChildCount="0" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList />
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTParallelSequence" IsLimitChildCount="false" LimitChildCount="0" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList />
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTCondition" IsLimitChildCount="true" LimitChildCount="0" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList>
+        <BTNodeTypeParamterData ParamType="I32" Name="LimitId" />
+      </m_ParamList>
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTDInverter" IsLimitChildCount="true" LimitChildCount="1" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList>
+        <BTNodeTypeParamterData ParamType="Double" Name="Inverter" />
+      </m_ParamList>
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTDInverterByFrame" IsLimitChildCount="true" LimitChildCount="1" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList>
+        <BTNodeTypeParamterData ParamType="I32" Name="Inverter" />
+      </m_ParamList>
+    </BTNodeTypeInfoData>
+    <BTNodeTypeInfoData IsRoot="false" Name="BTActionShoot" IsLimitChildCount="true" LimitChildCount="0" IsLimitChildType="false">
+      <m_OptionChildTypeList />
+      <m_ParamList />
+    </BTNodeTypeInfoData>
+  </m_TypeInfoList>
+</BTNodeTypeConfigData>

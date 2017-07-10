@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExcelDescInfoList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <m_DescList>
+    <ExcelDataElement_Struct ElementType="Struct" Id="-1" Name="SpellCardConfigTable" ColumnId="-1" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0">
+      <m_Value>
+        <ExcelDataElement xsi:type="ExcelDataElement_Map" ElementType="Map" Id="1" Name="spellCardConfigMap" ColumnId="-1" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0">
+          <m_KeyValue ElementType="I32" Id="-1" Name="none" ColumnId="0" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+          <m_ValueValue xsi:type="ExcelDataElement_Struct" ElementType="Struct" Id="-1" Name="SpellCardConfig" ColumnId="-1" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0">
+            <m_Value>
+              <ExcelDataElement ElementType="I32" Id="10" Name="id" ColumnId="0" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="20" Name="nameId" ColumnId="3" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="30" Name="descId" ColumnId="5" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="String" Id="40" Name="icon" ColumnId="7" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="50" Name="activeLimitId" ColumnId="8" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="60" Name="activeCostId" ColumnId="9" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="70" Name="sortId" ColumnId="10" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="80" Name="displayLimitId" ColumnId="11" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="90" Name="tipType" ColumnId="12" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+              <ExcelDataElement ElementType="I32" Id="100" Name="quality" ColumnId="1" isList="false" isLimitRange="false" isLimitOption="false" isCheckIndex="false" IndexConfiggColumnId="0" />
+            </m_Value>
+          </m_ValueValue>
+        </ExcelDataElement>
+      </m_Value>
+    </ExcelDataElement_Struct>
+  </m_DescList>
+</ExcelDescInfoList>

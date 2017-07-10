@@ -1,0 +1,39 @@
+﻿using Util;
+using System.Collections.Generic;
+using System;
+
+public class {ConfigName}Parser
+{
+    private string m_strErrorMsg;
+
+    public string GetErrorMsg()
+    {
+        return m_strErrorMsg;
+    }
+    public List<{className}> ParserConfig(string[][] content)
+    {
+        List<{className}> {result} = new List<{className}>();
+        for (int i = 0; i < content.Length; ++i)
+        {
+            {result}.Add(ParserLine(i, content[i]));
+
+            if (!string.IsNullOrEmpty(m_strErrorMsg))
+            {
+                return null;
+            }
+        }
+        return {result};
+    }
+    private {className} ParserLine(int lineIndex, string[] values)
+    {
+		int tmpIndexOffset = 0;
+		int skipCount = 0;
+
+		{className} {lineElement} = new {className}();
+
+{ParserMember}
+
+		return {lineElement};
+    }
+{ConfigChecker}
+}

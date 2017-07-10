@@ -1,0 +1,17 @@
+﻿        List<string> {sourceList} = null;
+        if (!VaildUtil.TryConvert(values[{realIndex} + tmpIndexOffset], {splitType}, out {sourceList}, out skipCount))
+        {
+            throw new Exception("Error on check config is exist");
+        }
+        if (index == {id})
+        {
+            for (int i = 0; i < {sourceList}.Count; ++i)
+            {
+                if ({sourceList}[i] == keyValue)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        tmpIndexOffset += skipCount;

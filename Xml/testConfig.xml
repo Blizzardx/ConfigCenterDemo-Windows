@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <nodeInfoList xsi:type="ConfigElementNodeInfo" id="0" name="id" desc="id" type="I32" rangeMin="0" rangeMax="50" refrenceConfigName="" refrenceConfigId="5" />
+  <nodeInfoList xsi:type="ConfigElementNodeInfo" id="1" name="nameMessageId" desc="nameMessageId" type="I32" rangeMin="" rangeMax="" refrenceConfigName="testTableConfig" refrenceConfigId="2" />
+  <nodeInfoList xsi:type="ConfigStructInfo" id="2" name="position" desc="位置">
+    <nodeInfoList id="2" name="x" desc="x" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+    <nodeInfoList id="3" name="y" desc="y" type="Double" rangeMin="" rangeMax="" refrenceConfigName="" refrenceConfigId="0" />
+    <nodeInfoList id="4" name="z" desc="z" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigStructInfo" id="5" name="resource" desc="资源描述">
+    <nodeInfoList id="5" name="textureName" desc="textureName" type="String" rangeMin="" rangeMax="" refrenceConfigId="0" />
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigStructListInfo" types="Brackets">
+    <structInfo id="6" name="rotation" desc="旋转">
+      <nodeInfoList id="6" name="x" desc="x" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+      <nodeInfoList id="7" name="y" desc="y" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+      <nodeInfoList id="8" name="z" desc="z" type="Double" rangeMin="" rangeMax="" refrenceConfigId="0" />
+    </structInfo>
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigNodeListInfo" types="Letter">
+    <nodeInfo id="9" name="attachNamePosition" desc="attachNamePosition" type="String" rangeMin="" rangeMax="" refrenceConfigId="0" />
+  </nodeInfoList>
+  <nodeInfoList xsi:type="ConfigStructListInfo" types="Letter">
+    <structInfo id="10" name="audioSource" desc="audioSource">
+      <nodeInfoList id="10" name="audioSourceName" desc="auduioSourceName" type="String" rangeMin="" rangeMax="" refrenceConfigId="0" />
+    </structInfo>
+  </nodeInfoList>
+</root>

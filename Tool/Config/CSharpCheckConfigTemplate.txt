@@ -1,0 +1,21 @@
+﻿	public bool CheckIsConfigExistKey(string[][] content, int index, string keyValue)
+    {
+        for (int i = 0; i < content.Length; ++i)
+        {
+            if (CheckIsConfigExistKey(content[i], index, keyValue))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    public bool CheckIsConfigExistKey(string[] values, int index, string keyValue)
+    {
+        int tmpIndexOffset = 0;
+        int skipCount = 0;
+        bool tmpMark = false;
+
+{CheckMember}
+
+        return false;
+    }

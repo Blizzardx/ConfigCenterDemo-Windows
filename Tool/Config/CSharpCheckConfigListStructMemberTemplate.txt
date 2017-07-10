@@ -1,0 +1,8 @@
+﻿			if (index == {id})
+            {
+                tmpMark = true;
+                if ({sourceList}[{tmpIndex} + i] == keyValue)
+                {
+                    return true;
+                }
+            }
