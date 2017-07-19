@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PathConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XmlConfigPath>D:\ConfigCenter\Xml</XmlConfigPath>
-  <ParserConfigPath>D:\ConfigCenter\Parser</ParserConfigPath>
+  <XmlConfigPath>D:\ConfigCenter\DevConfig\Xml</XmlConfigPath>
+  <ParserConfigPath>D:\ConfigCenter\DevConfig\Parser</ParserConfigPath>
   <ExcelConfigPath>D:\ConfigCenter\Excel</ExcelConfigPath>
+  <CodeConfigPath>D:\ConfigCenter\DevConfig\CSharpCode</CodeConfigPath>
 </PathConfig>

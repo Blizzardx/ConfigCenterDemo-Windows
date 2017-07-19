@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PathConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <ParserOutputPath>D:\ConfigCenter\Parser</ParserOutputPath>
-  <XmlRootPath>D:\ConfigCenter\Xml</XmlRootPath>
+  <ParserOutputPath>D:\ConfigCenter\DevConfig\Parser</ParserOutputPath>
+  <XmlRootPath>D:\ConfigCenter\DevConfig\Xml</XmlRootPath>
 </PathConfig>
