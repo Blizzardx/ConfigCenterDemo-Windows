@@ -36,7 +36,8 @@ public class testConfigParser
                 m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]读取出现错误，{3}必须为{4} - {5} {6}型", "testConfig", lineIndex,0+1, values[0 + tmpIndexOffset],0,50,"int","id");
 	            return null;
             }			
-			if (!VaildUtil.CheckRefrenceConfig("", 5 ,values[0 + tmpIndexOffset]))
+			if (!VaildUtil.CheckIsDefaultValue(false, values[0 + tmpIndexOffset] ,"") && 
+			!VaildUtil.CheckRefrenceConfig("", 5 ,values[0 + tmpIndexOffset]))
 			{
 					m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,0+1, values[0 + tmpIndexOffset],"","id");
 					return null;
@@ -47,7 +48,8 @@ public class testConfigParser
                 m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]读取出现错误，{3}必须为{4} - {5} {6}型", "testConfig", lineIndex,1+1, values[1 + tmpIndexOffset],int.MinValue,int.MaxValue,"int","nameMessageId");
 	            return null;
             }			
-			if (!VaildUtil.CheckRefrenceConfig("testTableConfig", 2 ,values[1 + tmpIndexOffset]))
+			if (!VaildUtil.CheckIsDefaultValue(false, values[1 + tmpIndexOffset] ,"") && 
+			!VaildUtil.CheckRefrenceConfig("testTableConfig", 2 ,values[1 + tmpIndexOffset]))
 			{
 					m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,1+1, values[1 + tmpIndexOffset],"testTableConfig","nameMessageId");
 					return null;
@@ -59,7 +61,8 @@ public class testConfigParser
                 m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]读取出现错误，{3}必须为{4} - {5} {6}型", "testConfig", lineIndex,2+1, values[2 + tmpIndexOffset],double.MinValue,double.MaxValue,"double","x");
 	            return null;
             }			
-			if (!VaildUtil.CheckRefrenceConfig("", 0 ,values[2 + tmpIndexOffset]))
+			if (!VaildUtil.CheckIsDefaultValue(false, values[2 + tmpIndexOffset] ,"") && 
+			!VaildUtil.CheckRefrenceConfig("", 0 ,values[2 + tmpIndexOffset]))
 			{
 					m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,2+1, values[2 + tmpIndexOffset],"","x");
 					return null;
@@ -69,7 +72,8 @@ public class testConfigParser
                 m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]读取出现错误，{3}必须为{4} - {5} {6}型", "testConfig", lineIndex,3+1, values[3 + tmpIndexOffset],double.MinValue,double.MaxValue,"double","y");
 	            return null;
             }			
-			if (!VaildUtil.CheckRefrenceConfig("", 0 ,values[3 + tmpIndexOffset]))
+			if (!VaildUtil.CheckIsDefaultValue(false, values[3 + tmpIndexOffset] ,"") && 
+			!VaildUtil.CheckRefrenceConfig("", 0 ,values[3 + tmpIndexOffset]))
 			{
 					m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,3+1, values[3 + tmpIndexOffset],"","y");
 					return null;
@@ -79,7 +83,8 @@ public class testConfigParser
                 m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]读取出现错误，{3}必须为{4} - {5} {6}型", "testConfig", lineIndex,4+1, values[4 + tmpIndexOffset],double.MinValue,double.MaxValue,"double","z");
 	            return null;
             }			
-			if (!VaildUtil.CheckRefrenceConfig("", 0 ,values[4 + tmpIndexOffset]))
+			if (!VaildUtil.CheckIsDefaultValue(false, values[4 + tmpIndexOffset] ,"") && 
+			!VaildUtil.CheckRefrenceConfig("", 0 ,values[4 + tmpIndexOffset]))
 			{
 					m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,4+1, values[4 + tmpIndexOffset],"","z");
 					return null;
@@ -91,7 +96,8 @@ public class testConfigParser
                 m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]读取出现错误，{3}必须为{4} - {5} {6}型", "testConfig", lineIndex,5+1, values[5 + tmpIndexOffset],null,null,"string","textureName");
 	            return null;
             }			
-			if (!VaildUtil.CheckRefrenceConfig("", 0 ,values[5 + tmpIndexOffset]))
+			if (!VaildUtil.CheckIsDefaultValue(false, values[5 + tmpIndexOffset] ,"") && 
+			!VaildUtil.CheckRefrenceConfig("", 0 ,values[5 + tmpIndexOffset]))
 			{
 					m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,5+1, values[5 + tmpIndexOffset],"","textureName");
 					return null;
@@ -119,7 +125,8 @@ public class testConfigParser
 					return null;
 				}
 							
-				if (!VaildUtil.CheckRefrenceConfig("", 0 , rotationSourceList[0 + startIndex]))
+				if (!VaildUtil.CheckIsDefaultValue(false, rotationSourceList[0 + startIndex] ,"") && 
+				!VaildUtil.CheckRefrenceConfig("", 0 , rotationSourceList[0 + startIndex]))
 				{
 						m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,0+1, rotationSourceList[0 + startIndex],"","x");
 						return null;
@@ -130,7 +137,8 @@ public class testConfigParser
 					return null;
 				}
 							
-				if (!VaildUtil.CheckRefrenceConfig("", 0 , rotationSourceList[1 + startIndex]))
+				if (!VaildUtil.CheckIsDefaultValue(false, rotationSourceList[1 + startIndex] ,"") && 
+				!VaildUtil.CheckRefrenceConfig("", 0 , rotationSourceList[1 + startIndex]))
 				{
 						m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,1+1, rotationSourceList[1 + startIndex],"","y");
 						return null;
@@ -141,7 +149,8 @@ public class testConfigParser
 					return null;
 				}
 							
-				if (!VaildUtil.CheckRefrenceConfig("", 0 , rotationSourceList[2 + startIndex]))
+				if (!VaildUtil.CheckIsDefaultValue(false, rotationSourceList[2 + startIndex] ,"") && 
+				!VaildUtil.CheckRefrenceConfig("", 0 , rotationSourceList[2 + startIndex]))
 				{
 						m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,2+1, rotationSourceList[2 + startIndex],"","z");
 						return null;
@@ -169,7 +178,8 @@ public class testConfigParser
 					m_strErrorMsg = string.Format("{7} {0}.xlsx [{1},{2}]数组解析读取出现错误，{3}必须为{4} - {5} {6}型", "testConfig", lineIndex,i+1, attachNamePositionSourceList[i],null,null,"string","attachNamePosition");
 					return null;
 				}			
-				if (!VaildUtil.CheckRefrenceConfig("", 0 , attachNamePositionSourceList[i]))
+				if (!VaildUtil.CheckIsDefaultValue(false,  attachNamePositionSourceList[i] ,"") &&
+				!VaildUtil.CheckRefrenceConfig("", 0 , attachNamePositionSourceList[i]))
 				{
 						m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,i+1, attachNamePositionSourceList[i],"","attachNamePosition");
 						return null;
@@ -203,7 +213,8 @@ public class testConfigParser
 					return null;
 				}
 							
-				if (!VaildUtil.CheckRefrenceConfig("", 0 , audioSourceSourceList[0 + startIndex]))
+				if (!VaildUtil.CheckIsDefaultValue(true, audioSourceSourceList[0 + startIndex] ,"123456") && 
+				!VaildUtil.CheckRefrenceConfig("", 0 , audioSourceSourceList[0 + startIndex]))
 				{
 						m_strErrorMsg = string.Format("{5} {0}.xlsx [{1},{2}]读取出现错误，{3}在{4}中没找到", "testConfig", lineIndex,0+1, audioSourceSourceList[0 + startIndex],"","auduioSourceName");
 						return null;
